@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar{
+    display: flex;
+    padding: 22px 30px;
+    -webkit-box-shadow: 0px 14px 14px -10px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 14px 14px -10px rgba(0,0,0,0.18);
+    box-shadow: 0px 14px 14px -10px rgba(0,0,0,0.18);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header > img{
+    max-width: 400px;
+    align-self: center;
+    margin: 40px 0;
+}
+
+header > h1, header > p{
+    margin: 0;
+    padding: 0px 25px;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 20px;
+}
+
+.card{
+    position: relative;
+    width: 200px;
+    flex: 0 0 auto;         /* ADD */
+    display: flex;          /* ADD */
+    flex-direction: column; /* ADD */
+}
+
+.card--img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card--line1, .card--line2, .card--line3{
+    margin: 0;
+    padding: 1px 10px;
+}
+
+.card--line1{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    gap:5px;
+}
+
+.card--line3{
+    margin-top: auto;
+}
+
+.card--line1 > span{
+    color:gray;
+}
+
+.card--line3 > span{
+    font-weight: bold;
+}
+
+.card--badge{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}
